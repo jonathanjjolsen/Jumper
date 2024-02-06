@@ -11,12 +11,17 @@ function App() {
 
   return (
     <Router>
+      
       <NavBar />
 
       <Routes>
+
         <Route path="/" element={<Home />} />
+
         <Route path="/AddCode" element={<AddCode />} />
+      
       </Routes>
+    
     </Router>
   )
 }
