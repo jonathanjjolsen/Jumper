@@ -21,25 +21,27 @@ const NavBar = () => {
                         <li><a>About</a></li>
                     </ul>
                 </div>
-                <Link to={'/'}><a className="btn btn-ghost text-xl">Jumper</a></Link>
+                <div className='trial'>
+                    <Link to={'/'}><a className="btn btn-ghost text-4xl">Jumper</a></Link>
+                </div>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
-                    <li><a><Link to={'/categories'}>Categories</Link></a></li>
+                    <li className='text-xl'><a><Link to={'/categories'}>Categories</Link></a></li>
                     <li>
                         <details>
-                            <summary>Add/Remove</summary>
+                            <summary className='text-xl'>Add/Remove</summary>
                             <ul className="p-2">
-                                <li><a><Link to={'AddCode'}>Add Code</Link></a></li>
-                                <li><a>Remove Code</a></li>
+                                <li className='text-xl'><a><Link to={'AddCode'}>Add Code</Link></a></li>
+                                <li className='text-xl'><a>Remove Code</a></li>
                             </ul>
                         </details>
                     </li>
-                    <li><a>About</a></li>
+                    <li className='text-xl'><a>About</a></li>
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Under Construction</a>
+                <a className="btn text-xl">Under Construction</a>
             </div>
         </div>
     );

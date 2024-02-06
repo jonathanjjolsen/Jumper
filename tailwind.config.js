@@ -5,7 +5,11 @@ export default {
       './client/src/pages/*jsx'
     ],
     theme: {
-      extend: {},
+      extend: {
+        fontFamily: {
+          custom: ["Teko"],
+        },
+      },
     },
     plugins: [require('daisyui')],
     daisyui: {
