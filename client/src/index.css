@@ -10,5 +10,17 @@
   height: 100vh;
   padding-top: 5%;
   flex-direction: column;
-  
+}
+
+.navbar {
+  background-color: #004469;
+  color: white;
+}
+
+.aboutCard {
+  max-width: 80%;
+}
+
+.fix{
+  background-color:#004469;
 }

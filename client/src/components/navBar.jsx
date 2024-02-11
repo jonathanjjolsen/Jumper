@@ -10,38 +10,40 @@ const NavBar = () => {
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </div>
                     <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                        <li><a>Categories</a></li>
+                        <li>Categories</li>
                         <li>
-                            <a>+/-</a>
+                            +/- 
                             <ul className="p-2">
-                                <li><a>Add Code</a></li>
-                                <li><a>Remove Code</a></li>
+                                <li>Add Code</li>
+                                <li>Remove Code</li>
                             </ul>
                         </li>
-                        <li><a>About</a></li>
+                        <li>About</li>
+                        <li>Zip to Ship</li>
                     </ul>
                 </div>
                 <div className='trial'>
-                    <Link to={'/'}><a className="btn btn-ghost text-4xl">Jumper</a></Link>
+                    <Link to={'/'} className="btn btn-ghost text-4xl">Jumper</Link>
                 </div>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
-                    <li className='text-xl'><a><Link to={'/categories'}>Categories</Link></a></li>
+                    <li className='text-xl'><Link to={'/Categories'}>Categories</Link></li>
                     <li>
                         <details>
                             <summary className='text-xl'>Add/Remove</summary>
-                            <ul className="p-2">
-                                <li className='text-xl'><a><Link to={'AddCode'}>Add Code</Link></a></li>
-                                <li className='text-xl'><a>Remove Code</a></li>
+                            <ul className="p-2 fix">
+                                <li className='text-xl'><Link to={'AddCode'}>Add Code</Link></li>
+                                <li className='text-xl'>Remove Code</li>
                             </ul>
                         </details>
                     </li>
-                    <li className='text-xl'><a>About</a></li>
+                    <li className='text-xl'><Link to={'About'}>About</Link></li>
+                    <li className='text-xl'><Link to={'ZipToShip'}>Zip To Ship</Link></li>
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn text-xl">Under Construction</a>
+                <span className="btn text-xl">Under Construction</span>
             </div>
         </div>
     );
